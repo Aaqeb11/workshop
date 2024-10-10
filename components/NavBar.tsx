@@ -1,29 +1,48 @@
-"use client"; // Ensure this is at the top
+"use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { initFlowbite } from "flowbite";
 
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
-    // Check if window is defined to ensure we're in the browser
-    if (typeof window !== "undefined") {
-      initFlowbite();
-    }
+    // Add scroll event listener
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  useEffect(() => {
+    const initializeFlowbite = async () => {
+      const flowbite = await import("flowbite");
+      flowbite.initFlowbite();
+    };
+
+    initializeFlowbite();
+  }, []);
+
   return (
-    <nav className="bg-transparent w-full z-20 top-0 start-0">
+    <nav
+      className={`${
+        scrolled ? "bg-black" : "bg-transparent"
+      } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out`}
+    >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a
-          href="https://flowbite.com/"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap">
+        <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/logo.svg" className="h-8" alt="Logo" />
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             Flowbite
           </span>
         </a>
@@ -63,7 +82,7 @@ export default function Navbar() {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 transition-all duration-300 ease-in-out"
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-black md:bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
