@@ -9,6 +9,7 @@ import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
 import speaker3 from "../public/speaker3.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
+import AppointmentForm from "@/components/AppointmentForm";
 
 export default function Home() {
   return (
@@ -73,6 +74,12 @@ export default function Home() {
             Creates And Ignites Spark Within
           </p>
         </div>
+      </section>
+      <section className="h-auto relative z-20 bg-black p-10">
+      <p className="lg:text-8xl md:text-6xl text-4xl text-white p-6 text-center ">
+            CONTACT <span className="text-[#63AB38]">US</span>
+          </p>
+        <AppointmentForm />
       </section>
     </main>
   );
