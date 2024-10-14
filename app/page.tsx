@@ -9,6 +9,9 @@ import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
 import speaker3 from "../public/speaker3.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
+import { Attend } from "@/components/Attend";
+import { Learn } from "@/components/Learn";
+import Events from "@/components/Events";
 
 export default function Home() {
   return (
@@ -65,14 +68,83 @@ export default function Home() {
         <EarlyAccess />
       </section>
       <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
-        <div className="flex flex-col gap-4 items-center">
-          <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
-            WHY ATTEND
-          </p>
-          <p className="text-md font-medium text-[#999999]">
-            Creates And Ignites Spark Within
-          </p>
+        <div className="flex flex-col md:gap-[10vh] gap-12 items-center justify-center mt-10">
+          <div className="flex items-center flex-col gap-6">
+            <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
+              WHY ATTEND
+            </p>
+            <p className="text-md font-medium text-[#999999]">
+              Creates And Ignites Spark Within
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 ">
+            <Attend
+              heading="Reignite Your
+                      Inner Drive"
+              content="If you feel disconnected from your sense of achievement or are struggling with setbacks, Magdalena will help you reignite your passion and confidence. Through mindfulness, you’ll learn to rebuild a positive mindset and restore your drive to succeed."
+            />
+            <Attend
+              heading="Cultivate Resilience with Mindfulness"
+              content="those facing a personal or professional plateau, Oceana’s mindfulness techniques will help you cultivate resilience, focus, and perseverance. You’ll leave the workshop with a stronger inner drive and the tools to stay motivated in the face of adversity"
+            />
+            <Attend
+              heading="Boost Your Real 
+              Estate Success"
+              content="perfect for real estate professionals looking to improve lead generation and deal-closing techniques. Learn how to find pre-foreclosure opportunities, negotiate better, and close more off-market deals by enhancing your communication and sales skills.
+              "
+            />
+          </div>
         </div>
+      </section>
+      <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
+        <div className="flex flex-col md:gap-[10vh] gap-12 items-center justify-center mt-10">
+          <div className="flex items-center flex-col gap-6">
+            <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
+              WHAT YOU WILL LEARN
+            </p>
+            <p className="text-md font-medium text-[#999999]">
+              standing out & being more than ordinary
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-8 ">
+            <Learn
+              heading="Reclaiming Success
+              through Mindfulness"
+              content=" help you rediscover your personal definition of success. You’ll learn how to realign your mindset with your goals, use mindfulness to regain clarity, and overcome mental clutter. With her guidance, you’ll be equipped to face setbacks with resilience and confidence.
+              "
+            />
+            <Learn
+              heading="Mindfulness for Personal 
+              Transformation"
+              content="teach you practical mindfulness techniques to improve focus, restore inner strength, and overcome challenges. You’ll develop morning rituals and habits that promote sustained success, helping you navigate life’s obstacles while maintaining balance and momentum.
+
+              "
+            />
+            <Learn
+              heading="Pre-Foreclosure 
+              Mastery"
+              content="Learn how to identify and target pre-foreclosure leads, scrub and narrow down lists, and effectively communicate with homeowners and their families during cold calls or door knocking. You’ll also acquire negotiation and sales techniques to close more off-market deals successfully.
+
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
+        <div className="flex flex-col md:gap-[10vh] gap-12 items-center justify-center mt-10">
+          <div className="flex items-center flex-col gap-6 ">
+            <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium tracking-wide">
+              <span className="text-[#63AB38]">MOMENTS</span> FROM OUR EVENTS
+            </p>
+            <p className="text-md font-medium text-[#999999] text-center md:max-w-[70vw] md:px-0 px-2">
+              This was a wonderful introduction to creative finance for our
+              guest, and we heard from several amazing speakers. Each of them
+              are experts in their respective fields and commented on current
+              strategies and best practices.
+            </p>
+          </div>
+        </div>
+        <Events />
       </section>
     </main>
   );
