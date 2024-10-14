@@ -12,11 +12,11 @@ import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
 import Events from "@/components/Events";
+import AppointmentForm from "@/components/AppointmentForm";
 
 export default function Home() {
   return (
     <main className="">
-      {/* Sticky Section */}
       <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black">
         <Image
           src={bg}
@@ -145,6 +145,12 @@ export default function Home() {
           </div>
         </div>
         <Events />
+      </section>
+      <section className="h-auto relative z-20 bg-black p-10">
+        <p className="lg:text-8xl md:text-6xl text-4xl text-white p-6 text-center ">
+          CONTACT <span className="text-[#63AB38]">US</span>
+        </p>
+        <AppointmentForm />
       </section>
     </main>
   );
