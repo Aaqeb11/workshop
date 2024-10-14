@@ -10,13 +10,15 @@ interface SpeakerData {
 
 export const Speakers: React.FC<SpeakerData> = ({ image, name }) => {
   return (
-    <div className="bg-black rounded-xl p-8 relative md:h-[70vh] h-[50vh] border-4 border-[#63AB38]">
+    <div className="bg-[#323232] rounded-xl border border-4 border-black hover:border-[#63AB38] duration-600 ease-in-out  relative md:h-[70vh] h-[50vh] md:w-[38vw] w-full overflow-hidden">
       <Image
         src={image}
         alt="speaker 1"
-        className="md:h-[90%] h-[70%] w-[100%] rounded-full bg-gray-500 "
+        className="md:h-[90%] h-[90%] w-auto absolute md:-right-16 -right-16 md:-bottom-14 -bottom-9"
       />
-      <p className="text-2xl absolute bottom-2 left-2 text-white">{name}</p>
+      <p className="lg:text-2xl text-xl absolute bottom-10 left-2 text-white font-semibold flex flex-wrap p-2 w-[40vw]">
+        {name}
+      </p>
     </div>
   );
 };

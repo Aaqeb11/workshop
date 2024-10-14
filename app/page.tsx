@@ -7,6 +7,8 @@ import { AboutUs } from "@/components/AboutUs";
 import { Speakers } from "@/components/Speakers";
 import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
+import speaker3 from "../public/speaker3.png";
+import { EarlyAccess } from "@/components/EarlyAccess";
 
 export default function Home() {
   return (
@@ -31,32 +33,36 @@ export default function Home() {
       </section>
 
       {/* Scrolling Sections */}
-      <section className="relative z-20 bg-gray-200 min-h-screen p-8">
-        <div className="flex flex-col md:flex-row items-center justify-center px-4 gap-12 my-12">
+      <section className="relative z-20 bg-gray-200 min-h-screen md:p-8 p-2">
+        <div className="flex flex-col md:flex-row lg:items-start lg:justify-start items-center justify-center px-4 gap-12 my-12">
           <div className="flex flex-col gap-4 items-center justify-center w-full h-full">
-            <p className=" text-4xl md:hidden block">
+            <p className=" lg:text-4xl md:text-5xl text-4xl md:hidden block">
               A<span className="text-[#63AB38]">/</span>BOUT US
             </p>
             <Image
               src={About}
               alt="About us"
-              className=" md:h-[75vh] h-[70%] w-[100%] rounded-xl"
+              className="md:h-[65vh] lg:h-[75vh]  lg:max-h-[75vh] h-[40vh] w-[100%] rounded-xl"
             />
           </div>
           <AboutUs />
         </div>
       </section>
 
-      <section className="relative z-20 bg-gray-300 min-h-screen p-8">
+      <section className="relative z-20 bg-black min-h-screen md:p-8 p-2">
         <div className="mt-10 bg-black flex flex-col justify-center px-4 gap-4">
           <p className="lg:text-8xl md:text-6xl text-4xl text-white p-6 text-center md:text-left">
             OUR <span className="text-[#63AB38]">SPEAKERS</span>
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-10">
-            <Speakers image={speaker1} name="Aaqeb" />
-            <Speakers image={speaker2} name="Aaqeb" />
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-10 flex-wrap">
+            <Speakers image={speaker1} name="Oceana Hong" />
+            <Speakers image={speaker2} name="Magdalena Szara" />
+            <Speakers image={speaker3} name="Nita Patel" />
           </div>
         </div>
+      </section>
+      <section className="h-auto relative z-20 bg-[#63AB38] p-10">
+        <EarlyAccess />
       </section>
     </main>
   );
