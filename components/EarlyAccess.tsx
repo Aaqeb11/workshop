@@ -14,14 +14,14 @@ export const EarlyAccess = () => {
       />
       <Image
         src="/semi_circle.png"
-        className="absolute md:top-[110px] md:left-[40px] -left-[20px] lg:w-[160px] lg:h-[110px] md:w-[100px] md:h-[40px] w-[30px] h-[20px]"
+        className="absolute md:top-[110px] md:left-[40px] -left-[20px] -top-[10px] lg:w-[160px] lg:h-[110px] md:w-[100px] md:h-[40px] w-[30px] h-[20px]"
         alt="big_circle"
         width={150}
         height={150}
       />
       <Image
         src="/square.png"
-        className="absolute top-[50px] left-[225px] md:block hidden"
+        className="absolute md:top-[50px] md:left-[225px] lg:w-[100px] lg:h-[100px] md:w-[100px] md:h-[40px] w-[30px] h-[30px] left-[20px] -top-[20px]"
         alt="big_circle"
         width={100}
         height={100}
@@ -37,6 +37,27 @@ export const EarlyAccess = () => {
           <FaCircleArrowRight className="md:text-4xl  text-black group-hover:text-white" />
         </button>
       </div>
+      <Image
+        src="/quarter.png"
+        className="absolute bottom-[10px] md:right-[100px] right-[1px] w-[25px] h-[25px] md:w-[20px] md:h-[20px] lg:w-[130px] lg:h-[130px] "
+        alt="big_circle"
+        width={150}
+        height={150}
+      />
+      <Image
+        src="/rectangle.png"
+        className="absolute md:top-[110px] md:right-[250px] -bottom-[30px] right-[10px] lg:w-[100px] lg:h-[120px] md:w-[100px] md:h-[40px] w-[30px] h-[30px]"
+        alt="big_circle"
+        width={150}
+        height={150}
+      />
+      <Image
+        src="/small_circle.png"
+        className="absolute lg:w-[100px] lg:h-[100px] md:w-[100px] md:h-[40px] w-[30px] h-[30px] -right-[32px] -bottom-[20px]"
+        alt="big_circle"
+        width={100}
+        height={100}
+      />
     </div>
   );
 };

@@ -64,6 +64,16 @@ export default function Home() {
       <section className="h-auto relative z-20 bg-[#63AB38] p-10">
         <EarlyAccess />
       </section>
+      <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
+        <div className="flex flex-col gap-4 items-center">
+          <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
+            WHY ATTEND
+          </p>
+          <p className="text-md font-medium text-[#999999]">
+            Creates And Ignites Spark Within
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
