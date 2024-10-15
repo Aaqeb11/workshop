@@ -129,7 +129,7 @@ export default function Events() {
             <Image
               src={data.image}
               alt={`Brand ${(index % brands.length) + 1}`}
-              layout="fill"
+              fill
               className="rounded-lg object-cover"
             />
           </div>
