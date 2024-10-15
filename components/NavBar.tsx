@@ -3,8 +3,20 @@
 import React, { useEffect, useState } from "react";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-export default function Navbar() {
+// Define the type for the props
+interface NavbarProps {
+  isTicketPage: boolean;
+}
+
+export default function Navbar({ isTicketPage }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const initializeFlowbite = async () => {
+      const flowbite = await import("flowbite");
+      flowbite.initFlowbite();
+    };
+    initializeFlowbite();
+  }, []);
 
   useEffect(() => {
     // Add scroll event listener
@@ -24,19 +36,14 @@ export default function Navbar() {
     };
   }, []);
 
-  useEffect(() => {
-    const initializeFlowbite = async () => {
-      const flowbite = await import("flowbite");
-      flowbite.initFlowbite();
-    };
-
-    initializeFlowbite();
-  }, []);
-
   return (
     <nav
       className={`${
-        scrolled ? "bg-gradient-to-r from-black to-[#63AB38]" : "bg-transparent"
+        scrolled && !isTicketPage
+          ? "bg-black"
+          : isTicketPage || scrolled
+          ? "bg-black"
+          : "bg-transparent"
       } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -46,12 +53,9 @@ export default function Navbar() {
         >
           <img
             src="/logo.png"
-            className="object-cover h-20 md:h-100 w-20 md:w-100"
+            className="object-contain h-20 md:h-100 w-20 md:w-100"
             alt="Logo"
           />
-          {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-            GP
-          </span> */}
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button
