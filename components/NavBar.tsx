@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav
       className={`${
         scrolled ? "bg-black" : "bg-transparent"
-      } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out`}
+      } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out  z-40`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a

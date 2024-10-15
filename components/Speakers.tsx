@@ -10,7 +10,7 @@ interface SpeakerData {
 
 export const Speakers: React.FC<SpeakerData> = ({ image, name }) => {
   return (
-    <div className="bg-[#323232] rounded-xl border border-4 border-black hover:border-[#63AB38] duration-600 ease-in-out  relative md:h-[70vh] h-[50vh] md:w-[38vw] w-full overflow-hidden">
+    <div className="bg-[#323232] rounded-xl border border-4 border-black hover:border-[#63AB38] duration-600 ease-in-out  relative md:h-[70vh] h-[50vh] sm:h-[80vh] sm:w-[45vw] md:w-[38vw] w-full overflow-hidden">
       <Image
         src={image}
         alt="speaker 1"

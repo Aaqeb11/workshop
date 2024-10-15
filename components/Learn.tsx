@@ -17,7 +17,7 @@ export const Learn = ({
   content: string;
 }) => {
   return (
-    <Card className=" lg:max-w-[30vw] md:max-w-[50vw] max-w-[85vw] min-h-[50vh] flex flex-col items-center bg-[#D9D9D9] gap-4 rounded-3xl ring-4 ring-[#449E10]">
+    <Card className=" lg:max-w-[30vw] md:max-w-[50vw] max-w-[85vw] min-h-[52vh] flex flex-col items-center bg-[#D9D9D9] gap-4 rounded-3xl ring-4 ring-[#449E10]">
       <CardHeader>
         <div className="bg-[#449E10] rounded-full h-10 w-10 flex items-center justify-center">
           <div className="bg-white h-5 w-5"></div>
