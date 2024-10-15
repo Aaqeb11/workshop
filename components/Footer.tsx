@@ -6,8 +6,8 @@ import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-black to-[#63AB38] pt-12">
-      <div className="w-full mx-auto p-4 md:py-8">
+    <footer className="bg-gradient-to-r from-black to-[#63AB38] pt-0">
+      <div className="w-full mx-auto p-4 ">
         <div className="flex flex-col items-center justify-between md:flex-row gap-4 md:gap-0">
           <Link href="/" passHref>
             <div className="inline-block">
@@ -36,7 +36,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-black sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-black sm:mx-auto dark:border-gray-700 lg:my-2" />
         <span className="block text-sm text-black text-center justify-center dark:text-gray-400">
           © 2024 <a href="/" className="hover:underline">Elite Spaces™</a>. All Rights Reserved.
         </span>
