@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import NavbarWrapper from "@/components/NavbarWrapper"; // Import the new wrapper component
+
 import { Footer } from "@/components/Footer";
+import NavbarWrapper from "@/components/NavbarWrapper";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,6 +22,7 @@ export default function RootLayout({
           <NavbarWrapper /> {/* Use the client-side wrapper component */}
         </div>
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -18,13 +18,14 @@ import AppointmentForm from "@/components/AppointmentForm";
 
 export default function Home() {
   return (
-    <><main className="">
+    <main className="">
       <section className="sticky top-0 z-10 h-screen overflow-hidden bg-black">
         <Image
           src={bg}
           alt="bg_image"
           className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
-          priority />
+          priority
+        />
         <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[14vh]">
           <p className="text-white md:text-7xl lg:text-9xl text-5xl text-center ">
             GOLD MINING WORKSHOP
@@ -50,7 +51,8 @@ export default function Home() {
             <Image
               src={About}
               alt="About us"
-              className="h-[40vh] sm:h-auto w-full rounded-xl md:h-[60vh] lg:h-[75vh]" />
+              className="h-[40vh] sm:h-auto w-full rounded-xl md:h-[60vh] lg:h-[75vh]"
+            />
           </div>
           <AboutUs />
         </div>
@@ -83,13 +85,16 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-8 md:flex-row flex-wrap">
             <Attend
               heading="Reignite Your Inner Drive"
-              content="If you feel disconnected from your sense of achievement or are struggling with setbacks, Magdalena will help you reignite your passion and confidence." />
+              content="If you feel disconnected from your sense of achievement or are struggling with setbacks, Magdalena will help you reignite your passion and confidence."
+            />
             <Attend
               heading="Cultivate Resilience with Mindfulness"
-              content="Oceana’s mindfulness techniques will help you cultivate resilience, focus, and perseverance." />
+              content="Oceana’s mindfulness techniques will help you cultivate resilience, focus, and perseverance."
+            />
             <Attend
               heading="Boost Your Real Estate Success"
-              content="Perfect for real estate professionals looking to improve lead generation and deal-closing techniques." />
+              content="Perfect for real estate professionals looking to improve lead generation and deal-closing techniques."
+            />
           </div>
         </div>
       </section>
@@ -109,13 +114,16 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-8 md:flex-row flex-wrap">
             <Learn
               heading="Reclaiming Success through Mindfulness"
-              content="You'll learn how to realign your mindset with your goals." />
+              content="You'll learn how to realign your mindset with your goals."
+            />
             <Learn
               heading="Mindfulness for Personal Transformation"
-              content="Learn practical mindfulness techniques to improve focus." />
+              content="Learn practical mindfulness techniques to improve focus."
+            />
             <Learn
               heading="Pre-Foreclosure Mastery"
-              content="Learn how to identify and target pre-foreclosure leads." />
+              content="Learn how to identify and target pre-foreclosure leads."
+            />
           </div>
         </div>
       </section>
@@ -142,11 +150,7 @@ export default function Home() {
           CONTACT <span className="text-[#63AB38]">US</span>
         </p>
         <AppointmentForm />
-
       </section>
-    </main><section>
-        <Footer />
-      </section></>
-    
+    </main>
   );
 }
