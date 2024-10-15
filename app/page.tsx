@@ -13,6 +13,7 @@ import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
 import Events from "@/components/Events";
 import AppointmentForm from "@/components/AppointmentForm";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (

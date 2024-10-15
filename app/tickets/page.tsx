@@ -10,6 +10,7 @@ import {
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { Footer } from "@/components/Footer";
 
 const TicketPage = () => {
   const benefits = [
@@ -22,9 +23,9 @@ const TicketPage = () => {
   ];
 
   return (
-    <main className="bg-black relative z-30">
-      <div className="flex items-center justify-center p-4 min-h-screen bg-black pt-20 md:pt-20 gap-6 flex-col md:flex-row">
-        <Card className="w-full max-w-[90vw] md:max-w-[70vw] lg:max-w-[30vw] flex flex-col items-center bg-gradient-to-br from-[#4CAF50] to-[#3E3E3E] gap-2 rounded-3xl ring-4 ring-[#449E10] shadow-lg transition-transform transform md:hover:scale-105 duration-300 shadow-white/50 overflow-y-auto max-h-[90vh] md:max-h-[80vh]">
+    <main className="bg-black relative z-30 ">
+      <div className="flex items-center justify-center p-4 min-h-screen bg-black   gap-6 flex-col md:flex-row py-[18vh]">
+        <Card className="w-full max-w-[90vw] md:max-w-[70vw] lg:max-w-[30vw] flex flex-col items-center bg-gradient-to-br from-[#4CAF50] to-[#3E3E3E] gap-2 rounded-3xl ring-4 ring-[#449E10] shadow-lg transition-transform transform md:hover:scale-105 duration-300 shadow-white/50 overflow-y-auto max-h-[90vh] min-h-screen ">
           <CardHeader className="flex flex-col gap-4 items-center w-full p-4">
             <Image src="/ticket.png" alt="learn" width={80} height={80} />
             <p className="text-xl md:text-2xl text-white">IN-PERSON Ticket</p>
