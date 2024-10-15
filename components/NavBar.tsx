@@ -36,15 +36,19 @@ export default function Navbar() {
   return (
     <nav
       className={`${
-        scrolled ? "bg-black" : "bg-transparent"
-      } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out  z-40`}
+        scrolled ? "bg-gradient-to-r from-black to-[#63AB38]" : "bg-transparent"
+      } w-full z-20 top-0 start-0 fixed transition-colors duration-300 ease-in-out`}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
           href="/"
-          className="flex items-center space-x-3 rtl:space-x-reverse md:w-[200px]"
+          className="flex items-center space-x-3 rtl:space-x-reverse md:w-[200px] h-12 md:h-[50px]"
         >
-          <img src="/logo.png" className="h-12 " alt="Logo" />
+          <img
+            src="/logo.png"
+            className="object-cover h-20 md:h-100 w-20 md:w-100"
+            alt="Logo"
+          />
           {/* <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
             GP
           </span> */}

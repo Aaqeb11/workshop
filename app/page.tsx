@@ -7,7 +7,7 @@ import { AboutUs } from "@/components/AboutUs";
 import { Speakers } from "@/components/Speakers";
 import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
-import speaker3 from "../public/speaker3.png";
+import speaker3 from "../public/speaker3.1.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
@@ -24,11 +24,15 @@ export default function Home() {
           className="absolute top-0 left-0 w-full h-full object-cover opacity-50"
           priority
         />
-        <div className="relative flex flex-col items-center justify-center h-screen gap-24 md:gap-[18vh]">
-          <p className="text-white text-center text-5xl md:text-7xl lg:text-9xl">
+        <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[14vh]">
+          <p className="text-white md:text-7xl lg:text-9xl text-5xl text-center ">
             GOLD MINING WORKSHOP
           </p>
-          <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl px-6 py-4 flex items-center gap-3 md:gap-4 group transition duration-300">
+          <p className="text-md md:text-lg text-center font-medium text-white">
+            Learn how to make $50K a month by mastering preforeclosures and
+            unlocking the power of your mindset.
+          </p>
+          <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300">
             REGISTER NOW
             <FaCircleArrowRight className="text-[#63AB38] group-hover:text-black md:text-lg" />
           </button>
@@ -58,24 +62,18 @@ export default function Home() {
           <p className="text-white text-center text-4xl md:text-left lg:text-8xl md:text-6xl p-6">
             OUR <span className="text-[#63AB38]">SPEAKERS</span>
           </p>
-          <div className="flex flex-col items-center justify-center gap-8 my-10 md:flex-row flex-wrap">
-            <Speakers image={speaker1} name="Oceana Hong" />
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-10 flex-wrap">
+            <Speakers image={speaker3} name=" Nita Patel" />
             <Speakers image={speaker2} name="Magdalena Szara" />
-            <Speakers image={speaker3} name="Nita Patel" />
+            <Speakers image={speaker1} name="Oceana Hong" />
           </div>
         </div>
       </section>
 
-      {/* Early Access Section */}
-      <section className="relative z-20 bg-[#63AB38] h-auto p-10">
-        <EarlyAccess />
-      </section>
-
-      {/* Why Attend Section */}
-      <section className="relative z-20 bg-white min-h-screen p-2 md:p-8">
-        <div className="flex flex-col items-center justify-center gap-12 mt-10 md:gap-[10vh]">
-          <div className="flex flex-col items-center gap-6">
-            <p className="text-center text-4xl font-medium p-6 md:text-6xl lg:text-8xl">
+      <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
+        <div className="flex flex-col md:gap-[10vh] gap-12 items-center justify-center mt-10">
+          <div className="flex items-center flex-col gap-6">
+            <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
               WHY ATTEND
             </p>
             <p className="text-md font-medium text-[#999999]">
@@ -98,12 +96,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* What You Will Learn Section */}
-      <section className="relative z-20 bg-white min-h-screen p-2 md:p-8">
-        <div className="flex flex-col items-center justify-center gap-12 mt-10 md:gap-[10vh]">
-          <div className="flex flex-col items-center gap-6">
-            <p className="text-center text-4xl font-medium p-6 md:text-6xl lg:text-8xl">
+      <section className="h-auto relative z-20 bg-[#63AB38] p-10">
+        <EarlyAccess />
+      </section>
+      <section className="relative z-20 bg-white min-h-screen md:p-8 p-2">
+        <div className="flex flex-col md:gap-[10vh] gap-12 items-center justify-center mt-10">
+          <div className="flex items-center flex-col gap-6">
+            <p className="lg:text-8xl md:text-6xl text-4xl text-center p-6 font-medium">
               WHAT YOU WILL LEARN
             </p>
             <p className="text-md font-medium text-[#999999]">

@@ -6,7 +6,7 @@ import Event1 from "../public/Event1.png";
 import Event2 from "../public/Event2.png";
 import Event3 from "../public/Event3.png";
 import Event4 from "../public/Event4.png";
-import Event5 from "../public/Event5.png";
+import Event5 from "../public/Event5.2.jpeg";
 import Event6 from "../public/Event6.png";
 
 interface Brand {
