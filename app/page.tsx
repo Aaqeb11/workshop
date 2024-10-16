@@ -7,7 +7,7 @@ import { AboutUs } from "@/components/AboutUs";
 import { Speakers } from "@/components/Speakers";
 import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
-import speaker3 from "../public/speaker3.1.png";
+import speaker3 from "../public/speaker3.2.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";

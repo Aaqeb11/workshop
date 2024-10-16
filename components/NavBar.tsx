@@ -51,15 +51,17 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
           />
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <button
-            type="button"
-            className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-2xl text-sm md:px-4 px-2 py-2 text-center flex items-center md:gap-4 gap-1 group duration-300"
-          >
-            Register Now
-            <div className="flex items-center justify-center">
-              <FaCircleArrowRight className="md:text-lg text-[#63AB38] group-hover:text-black" />
-            </div>
-          </button>
+          {!isTicketPage && (
+            <button
+              type="button"
+              className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-2xl text-sm md:px-4 px-2 py-2 text-center flex items-center md:gap-4 gap-1 group duration-300"
+            >
+              Register Now
+              <div className="flex items-center justify-center">
+                <FaCircleArrowRight className="md:text-lg text-[#63AB38] group-hover:text-black" />
+              </div>
+            </button>
+          )}
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
