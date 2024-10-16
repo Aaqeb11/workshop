@@ -12,9 +12,8 @@ import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
 import Events from "@/components/Events";
-import {Footer} from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 import AppointmentForm from "@/components/AppointmentForm";
-
 
 export default function Home() {
   return (
@@ -27,10 +26,10 @@ export default function Home() {
           priority
         />
         <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[14vh]">
-          <p className="text-white md:text-7xl lg:text-9xl text-5xl text-center ">
-            GOLD MINING WORKSHOP
+          <p className="text-white md:text-7xl lg:text-7xl text-5xl text-center ">
+            PREFORECLOSURE AND MINDSET WORKSHOP
           </p>
-          <p className="text-md md:text-lg text-center font-medium text-white">
+          <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white ">
             Learn how to make $50K a month by mastering preforeclosures and
             unlocking the power of your mindset.
           </p>

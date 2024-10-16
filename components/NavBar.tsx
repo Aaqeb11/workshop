@@ -10,6 +10,13 @@ interface NavbarProps {
 
 export default function Navbar({ isTicketPage }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    const initializeFlowbite = async () => {
+      const flowbite = await import("flowbite");
+      flowbite.initFlowbite();
+    };
+    initializeFlowbite();
+  }, []);
 
   useEffect(() => {
     // Add scroll event listener
@@ -46,7 +53,7 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
         >
           <img
             src="/logo.png"
-            className="object-cover h-20 md:h-100 w-20 md:w-100"
+            className="object-contain h-20 md:h-100 w-20 md:w-100"
             alt="Logo"
           />
         </a>
