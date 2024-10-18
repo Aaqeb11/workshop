@@ -34,7 +34,7 @@ export default function Home() {
           </video>
 
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[14vh]">
-            <p className="text-white md:text-7xl lg:text-7xl text-5xl text-center px-12 md:px-6">
+            <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6">
               PREFORECLOSURE AND MINDSET WORKSHOP
             </p>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white">
