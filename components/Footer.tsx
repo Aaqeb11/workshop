@@ -22,28 +22,21 @@ export const Footer = () => {
           <div className="flex justify-end w-full">
             <div className="flex items-center gap-6">
               <Link
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/nita-patel-sharma/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="text-black text-2xl" />
               </Link>
               <Link
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/sharma_nitapatel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram className="text-black text-2xl" />
               </Link>
               <Link
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTwitter className="text-black text-2xl" />
-              </Link>
-              <Link
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/nita.patel.7509836?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -64,13 +57,6 @@ export const Footer = () => {
           Address
         </span>
       </div>
-      <a
-        className="absolute bottom-0 right-0 text-black p-3 font-medium"
-        target="_blank"
-        href="https://github.com/Aaqeb11"
-      >
-        Developed by <span className="animate-pulse">~</span>
-      </a>
     </footer>
   );
 };

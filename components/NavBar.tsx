@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Link from "next/link"; // Import Link for navigation
 import { FaCircleArrowRight } from "react-icons/fa6";
 
 // Define the type for the props
@@ -10,6 +11,7 @@ interface NavbarProps {
 
 export default function Navbar({ isTicketPage }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
+
   useEffect(() => {
     const initializeFlowbite = async () => {
       const flowbite = await import("flowbite");
@@ -48,7 +50,7 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
-          href="/"
+          href="#home"
           className="flex items-center space-x-3 rtl:space-x-reverse md:w-[200px] h-12 md:h-[50px]"
         >
           <img
@@ -59,15 +61,17 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           {!isTicketPage && (
-            <button
-              type="button"
-              className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-2xl text-sm md:px-4 px-2 py-2 text-center flex items-center md:gap-4 gap-1 group duration-300"
-            >
-              Register Now
-              <div className="flex items-center justify-center">
-                <FaCircleArrowRight className="md:text-lg text-[#63AB38] group-hover:text-black" />
-              </div>
-            </button>
+            <Link href="/tickets"> {/* Use Link to navigate to the tickets page */}
+              <button
+                type="button"
+                className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-2xl text-sm md:px-4 px-2 py-2 text-center flex items-center md:gap-4 gap-1 group duration-300"
+              >
+                Register Now
+                <div className="flex items-center justify-center">
+                  <FaCircleArrowRight className="md:text-lg text-[#63AB38] group-hover:text-black" />
+                </div>
+              </button>
+            </Link>
           )}
           <button
             data-collapse-toggle="navbar-sticky"
@@ -101,7 +105,7 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg bg-black md:bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
             <li>
               <a
-                href="#"
+                href="#about"
                 className="block py-2 px-3 text-white bg-[#63AB38] rounded md:bg-transparent md:text-[#63AB38] md:p-0"
                 aria-current="page"
               >
@@ -110,24 +114,24 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
+                href="#speakers"
+                className="block py-2 px-3 text-white rounded hover:bg-[#63AB38] md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
               >
                 Speakers
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
+                href="#learn"
+                className="block py-2 px-3 text-white rounded hover:bg-[#63AB38] md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
               >
                 What You Will Learn
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
+                href="#contact"
+                className="block py-2 px-3 text-white rounded hover:bg-[#63AB38] md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
               >
                 Contact
               </a>

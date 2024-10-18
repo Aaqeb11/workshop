@@ -2,12 +2,11 @@ import React from "react";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBrain, faSeedling, faHouseDamage } from "@fortawesome/free-solid-svg-icons";
 
 export const Learn = ({
   heading,
@@ -16,11 +15,23 @@ export const Learn = ({
   heading: string;
   content: string;
 }) => {
+  // Function to render the appropriate icon based on the content
+  const renderIcon = () => {
+    if (content.includes("realign your mindset")) {
+      return <FontAwesomeIcon icon={faBrain} className="text-[#449E10]" />;
+    } else if (content.includes("mindfulness techniques")) {
+      return <FontAwesomeIcon icon={faSeedling} className="text-[#449E10]" />;
+    } else if (content.includes("pre-foreclosure leads")) {
+      return <FontAwesomeIcon icon={faHouseDamage} className="text-[#449E10]" />;
+    }
+    return null; // default icon if no match
+  };
+
   return (
-    <Card className=" lg:max-w-[30vw] md:max-w-[50vw] max-w-[85vw] min-h-[52vh] flex flex-col items-center bg-[#D9D9D9] gap-4 rounded-3xl ring-4 ring-[#449E10]">
+    <Card className="lg:max-w-[30vw] md:max-w-[50vw] max-w-[85vw] min-h-[52vh] flex flex-col items-center bg-[#D9D9D9] gap-4 rounded-3xl ring-4 ring-[#449E10]">
       <CardHeader>
-        <div className="bg-[#449E10] rounded-full h-10 w-10 flex items-center justify-center">
-          <div className="bg-white h-5 w-5"></div>
+        <div className="h-10 w-10 flex items-center justify-center">
+          {renderIcon()}
         </div>
       </CardHeader>
       <CardContent>
