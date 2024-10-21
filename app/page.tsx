@@ -131,15 +131,15 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center gap-8 md:flex-row flex-wrap">
             <Learn
               heading="Reclaiming Success through Mindfulness"
-              content="You'll learn how to realign your mindset with your goals."
+              content="Discover how to realign your mindset with your goals, empowering yourself to achieve success and overcome obstacles in both personal and professional life."
             />
             <Learn
               heading="Mindfulness for Personal Transformation"
-              content="Learn practical mindfulness techniques to improve focus."
+              content="Master practical mindfulness techniques to boost focus, enhance clarity, and stay present, helping you achieve greater productivity and mental well-being in everyday life."
             />
             <Learn
-              heading="Pre-Foreclosure Mastery"
-              content="Learn how to identify and target pre-foreclosure leads."
+              heading="Pre-Foreclosure and it's Mastery"
+              content="Learn to identify and target pre-foreclosure leads, equipping yourself with strategies to find opportunities and connect with homeowners before foreclosure occurs."
             />
           </div>
         </div>
