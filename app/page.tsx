@@ -15,6 +15,9 @@ import { Learn } from "@/components/Learn";
 import Events from "@/components/Events";
 import { Footer } from "@/components/Footer";
 import AppointmentForm from "@/components/AppointmentForm";
+import { FaLeaf } from "react-icons/fa";
+import { FaFireAlt } from "react-icons/fa";
+import { FaBuilding } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -37,7 +40,7 @@ export default function Home() {
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6">
             <span className="text-[#63AB38]">PREFORECLOSURE</span> AND <span className="text-[#63AB38]">MINDSET</span> WORKSHOP
           </p>
-            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white">
+            <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]">
               Learn how to make $50K a month by mastering preforeclosures and
               unlocking the power of your mindset.
             </p>
@@ -65,7 +68,7 @@ export default function Home() {
             <Image
               src={About}
               alt="About us"
-              className="h-[40vh] sm:h-auto w-full rounded-xl md:h-[60vh] lg:h-[75vh]"
+              className="h-[40vh] sm:h-auto w-full rounded-xl md:h-[60vh] lg:h-[80vh]"
             />
           </div>
           <AboutUs />
@@ -98,16 +101,19 @@ export default function Home() {
               Creates And Ignites Spark Within
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-8 md:flex-row flex-wrap">
+          <div className="flex flex-col items-center justify-center gap-4 md:flex-row flex-wrap">
             <Attend
+              icon={<FaFireAlt className="text-white text-4xl"/>}
               heading="Reignite Your Inner Drive"
               content="If you feel disconnected from your sense of achievement or are struggling with setbacks, Magdalena will help you reignite your passion and confidence."
             />
             <Attend
+              icon={<FaLeaf className="text-white text-4xl"/>}
               heading="Cultivate Resilience with Mindfulness"
               content="Oceana’s mindfulness techniques will help you cultivate resilience, focus, and perseverance."
             />
             <Attend
+              icon={<FaBuilding className="text-white text-4xl"/>}
               heading="Boost Your Real Estate Success"
               content="Perfect for real estate professionals looking to improve lead generation and deal-closing techniques."
             />

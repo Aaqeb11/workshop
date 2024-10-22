@@ -22,7 +22,7 @@ export const AboutUs = () => {
 
   return (
     <div className="flex flex-col md:items-start items-center justify-center md:gap-[6vh] w-full h-full gap-8">
-      <p className="lg:text-8xl md:text-6xl text-2xl hidden md:block">
+      <p className="lg:text-7xl md:text-6xl text-2xl hidden md:block">
         A<span className="text-[#63AB38]">\</span>BOUT US
       </p>
       <div className="md:h-auto max-h-[75vh] overflow-y-auto">
