@@ -36,7 +36,7 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
 
-          <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[14vh]">
+          <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]">
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6">
             <span className="text-[#63AB38]">PREFORECLOSURE</span> AND <span className="text-[#63AB38]">MINDSET</span> WORKSHOP
           </p>
@@ -44,6 +44,14 @@ export default function Home() {
               Learn how to make $50K a month by mastering preforeclosures and
               unlocking the power of your mindset.
             </p>
+            <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300">
+              {/* <Link href="/tickets"> */}
+                <div className="flex items-center gap-3 md:gap-4">
+                  November 16 and 17
+                  {/* <FaCircleArrowRight className="text-[#63AB38] group-hover:text-black md:text-lg" /> */}
+                </div>
+              {/* </Link> */}
+            </button>
             <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300">
               <Link href="/tickets">
                 <div className="flex items-center gap-3 md:gap-4">

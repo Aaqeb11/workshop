@@ -10,8 +10,10 @@ import {
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { FaCircleArrowLeft } from "react-icons/fa6";
 
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Link from "next/link";
 
 const TicketPage = () => {
   const benefits = [
@@ -23,14 +25,15 @@ const TicketPage = () => {
 
   return (
     <main className="bg-white ">
-      {/* <section
-        className="mt-[12vh] h-screen px-4 pt-8 items-center justify-center text-center bg-cover bg-center"
-        style={{ backgroundImage: `url('/Event6.png')` }}
-      >
-        <h2 className="text-3xl md:text-6xl items-center justify-center font-bold text-white">
-          Check Out
-        </h2>
-      </section> */}
+       <button className=" hover:bg-[#63AB38] text-black focus:ring-4 focus:outline-none focus:ring-green-300 ring-2 ring-[#63AB38] font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300 absolute top-0 left-0 m-4">
+              <Link href="/">
+                <div className="flex items-center gap-3 md:gap-4">
+                  <FaCircleArrowLeft className="text-[#63AB38] group-hover:text-black md:text-lg" />
+                  Back
+                </div>
+              </Link>
+            </button>
+     
 
       <div className="flex items-center justify-center p-4 min-h-screen bg-white   gap-6 flex-col md:flex-row py-[14vh]">
         <div className="w-full max-w-[90vw] md:max-w-[70vw] lg:max-w-[50vw] flex flex-col items-center gap-6">
@@ -55,69 +58,28 @@ const TicketPage = () => {
 
             {/* Location */}
             <div className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-[#63AB38]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 2C8.13401 2 5 5.13401 5 9C5 13.25 9 21 12 21C15 21 19 13.25 19 9C19 5.13401 15.866 2 12 2Z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 11.25C11.0335 11.25 10.25 10.4665 10.25 9.5C10.25 8.5335 11.0335 7.75 12 7.75C12.9665 7.75 13.75 8.5335 13.75 9.5C13.75 10.4665 12.9665 11.25 12 11.25Z"
-                />
-              </svg>
+              
+              <FaMapMarkerAlt className="text-[#63AB38]"/>
               <p className="text-base text-gray-700">Address coming soon!</p>
             </div>
 
             {/* Phone */}
             <div className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-[#63AB38]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3 5.9999C3 5.44758 3.44772 4.99988 4 4.99988H8C8.55228 4.99988 9 5.44758 9 5.9999V8.9999C9 9.55222 8.55228 9.9999 8 9.9999H6C5.44772 9.9999 5 10.4476 5 10.9999V12.9999C5 13.5522 5.44772 13.9999 6 13.9999H7C7.55228 13.9999 8 14.4476 8 14.9999V18.9999C8 19.5522 7.55228 19.9999 7 19.9999H4C3.44772 19.9999 3 19.5522 3 18.9999V5.9999Z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15 3.9999C15.5523 3.9999 16 4.4476 16 4.9999V18.9999C16 19.5522 15.5523 19.9999 15 19.9999H10C9.44772 19.9999 9 19.5522 9 18.9999V5.9999C9 5.4476 9.44772 4.9999 10 4.9999H15Z"
-                />
-              </svg>
-              <p className="text-base text-gray-700">+1-630-489-8779</p>
+              
+              <FaPhoneAlt className="text-[#63AB38]" />
+              <Link href="tel:+1-630-489-8779" className="text-base text-gray-700">
+              +1-630-489-8779
+              </Link>
+             
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 text-[#63AB38]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M16 7L12 11M8 7L12 11M21 6C21 5.44772 20.5523 5 20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6Z"
-                />
-              </svg>
-              <p className="text-base text-gray-700">Nitapatel410@gmail.com</p>
+              <FaEnvelope className="text-[#63AB38]"/>
+              <Link href="mailto:Nitapatel410@gmail.com" className="text-base text-gray-700">
+              Nitapatel410@gmail.com
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -130,10 +92,13 @@ const TicketPage = () => {
               20 spots Available
             </p>
             <p className="text-2xl md:text-3xl font-bold text-white">$3000</p>
+            <Link href="https://buy.stripe.com/7sI6socTh5M95BSfZ0">
+            
             <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-sm md:text-md lg:text-xl px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 text-center flex items-center gap-2 md:gap-3 lg:gap-4 group duration-300">
               BUY NOW
               <FaCircleArrowRight className="text-[#63AB38] group-hover:text-black text-sm md:text-md lg:text-lg" />
             </button>
+            </Link>
           </CardHeader>
           <CardContent className="w-full px-4 py-2">
             <hr className="w-full border-t border-white my-1 md:my-2" />
