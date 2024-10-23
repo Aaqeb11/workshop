@@ -92,7 +92,7 @@ const TicketPage = () => {
               20 spots Available
             </p>
             <p className="text-2xl md:text-3xl font-bold text-white">$3000</p>
-            <Link href="https://buy.stripe.com/7sI6socTh5M95BSfZ0">
+            <Link href="https://buy.stripe.com/5kA040g5t2zX8O4fZ1">
             
             <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-sm md:text-md lg:text-xl px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 text-center flex items-center gap-2 md:gap-3 lg:gap-4 group duration-300">
               BUY NOW
