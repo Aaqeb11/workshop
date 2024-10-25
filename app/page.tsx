@@ -8,7 +8,7 @@ import { AboutUs } from "@/components/AboutUs";
 import { Speakers } from "@/components/Speakers";
 import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
-import speaker3 from "../public/speaker3.2.png";
+import speaker3 from "../public/nita12.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
@@ -32,7 +32,7 @@ export default function Home() {
             muted
             playsInline
           >
-            <source src="./desktop.mp4" type="video/mp4" />
+            <source src="./Website.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 

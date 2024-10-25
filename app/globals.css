@@ -118,6 +118,23 @@
 .slider-container:hover .slider {
   animation-play-state: paused;
 }
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #63AB38, 0 0 20px #63AB38, 0 0 30px #63AB38, 0 0 40px #63AB38;
+  }
+  100% {
+    box-shadow: 0 0 20px #63AB38, 0 0 30px #63AB38, 0 0 40px #63AB38, 0 0 50px #63AB38;
+  }
+}
+
+.animate-glow {
+  animation: glow 2s infinite alternate;
+}
+
+.glow-icon {
+  animation: glow 2s infinite alternate;
+}
+
 @layer base {
   * {
     @apply border-border;
