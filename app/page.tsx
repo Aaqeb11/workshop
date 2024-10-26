@@ -42,29 +42,29 @@ export default function Home() {
     
     tl.from("#intro_heading", {
       yPercent: -50,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
-      delay: 0.2
+      delay: 0.05
     })
     .from("#intro_text", {
       yPercent: -50,
-      duration: 1.0,
+      duration: 0.8,
       opacity: 0,
-    }, "+=0.2")  // Wait 0.2s after heading completes
+    }, "+=0.1")  // Wait 0.2s after heading completes
     .from("#intro_button1", {
       y: 30,     // Using absolute pixels for button animation
-      duration: 1.0,
+      duration: 0.8,
       opacity: 0,
-    }, "+=0.3")   // Wait 0.3s after text completes
+    }, "+=0.1")   // Wait 0.3s after text completes
     .from("#intro_button2", {
       y: 30,     // Using absolute pixels for button animation
-      duration: 1.0,
+      duration: 0.8,
       opacity: 0,
-    }, "+=0.2"); // Slightly more overlap for smoother sequence
+    }, "+=0.1"); // Slightly more overlap for smoother sequence
 
     gsap.from("#about_us", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.15,
       scrollTrigger: {
@@ -77,7 +77,7 @@ export default function Home() {
    })
     gsap.from("#speakers_title", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.15,
       scrollTrigger: {
@@ -90,7 +90,7 @@ export default function Home() {
     })
     gsap.from("#attend_title", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.15,
       scrollTrigger: {
@@ -103,7 +103,7 @@ export default function Home() {
     })
     gsap.from("#learn_title", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.15,
       scrollTrigger: {
@@ -116,7 +116,7 @@ export default function Home() {
     })
     gsap.from("#events_title", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.15,
       scrollTrigger: {
@@ -129,7 +129,7 @@ export default function Home() {
     })
     gsap.from("#contact_title", {
       yPercent: -10,
-      duration: 1.3,
+      duration: 0.8,
       opacity: 0,
       delay: 0.2,
       scrollTrigger: {

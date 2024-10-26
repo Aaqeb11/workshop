@@ -120,7 +120,7 @@ const AppointmentForm = () => {
             type="submit"
             className="item-center justify-center h-[50px]  text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300"
           >
-            Contact Us
+            Submit
             <FaCircleArrowRight className="md:text-lg text-[#63AB38] group-hover:text-black" />
           </button>
         </form>
