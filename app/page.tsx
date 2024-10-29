@@ -173,7 +173,7 @@ export default function Home() {
 
           <div className="relative flex flex-col items-center justify-center h-screen md:gap-[8vh] gap-[8vh]">
           <p className="text-white md:text-7xl lg:text-7xl text-4xl text-center px-12 md:px-6" id="intro_heading">
-            <span className="text-[#63AB38]">PREFORECLOSURE</span> AND <span className="text-[#63AB38]">MINDSET</span> WORKSHOP
+            <span className="text-[#63AB38]">PREFORECLOSURE</span> WORKSHOP
           </p>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_text">
               Learn how to make $50K a month by mastering preforeclosures and
@@ -236,8 +236,8 @@ export default function Home() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-10 flex-wrap">
             <Speakers image={speaker3} name=" Nita Patel" />
-            <Speakers image={speaker2} name="Magdalena Szara" />
-            <Speakers image={speaker1} name="Oceana Hong" />
+            <Speakers image={speaker2} name="Oceana Hong" />
+            <Speakers image={speaker1} name="Magdalena Szara" />
           </div>
         </div>
       </section>
