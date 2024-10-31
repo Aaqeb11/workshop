@@ -35,15 +35,7 @@ export const AboutUs = () => {
   })
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const fullText = `In this workshop, Nita will share proven strategies for cold calling and
-    door knocking, focusing on building trust and empathy to close deals
-    effectively. You'll also learn how to find preforeclosure leads using
-    public records and real estate tools, ensuring a steady pipeline of
-    opportunities. With expert training and practical tools, you'll gain the
-    confidence to close successful deals. If you've been feeling
-    disconnected from your drive or sense of achievement, this workshop will
-    help you redefine success, centered on fulfillment, purpose, and
-    confidence with the help of other speakers`;
+  const fullText = `In this workshop, Nita shares proven strategies for cold calling and door knocking, emphasizing trust-building and empathy to close deals confidently. You'll learn to stack leads with multiple pain points, aiming for a steady stream of opportunities and a $50K monthly goal. Discover how to source preforeclosure leads from public records and real estate tools, creating a reliable pipeline. Alongside expert training and practical tools, redefine success with a renewed sense of purpose, confidence, and fulfillment, inspired by Nita and other insightful speakers.`;
 
   const shortText = fullText.slice(0, 311) + "...";
 

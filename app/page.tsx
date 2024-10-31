@@ -9,14 +9,14 @@ import { AboutUs } from "@/components/AboutUs";
 import { Speakers } from "@/components/Speakers";
 import speaker1 from "../public/speaker1.png";
 import speaker2 from "../public/speaker2.png";
-import speaker3 from "../public/nita12.png";
+import speaker3 from "../public/speaker4.png";
 import { EarlyAccess } from "@/components/EarlyAccess";
 import { Attend } from "@/components/Attend";
 import { Learn } from "@/components/Learn";
 import Events from "@/components/Events";
 import { Footer } from "@/components/Footer";
 import AppointmentForm from "@/components/AppointmentForm";
-import { FaLeaf } from "react-icons/fa";
+import { FaDollarSign, FaLeaf, FaStar } from "react-icons/fa";
 import { FaFireAlt } from "react-icons/fa";
 import { FaBuilding } from "react-icons/fa6";
 import { FaSeedling } from "react-icons/fa6";
@@ -176,8 +176,7 @@ export default function Home() {
             <span className="text-[#63AB38]">PREFORECLOSURE</span> WORKSHOP
           </p>
             <p className="text-md md:text-lg lg:text-2xl font-semibold text-center text-white md:max-w-[80vw] max-w-[90vw]" id="intro_text">
-              Learn how to make $50K a month by mastering preforeclosures and
-              unlocking the power of your mindset.
+            Stack leads with multiple pain points alongside me and make 50k in a month .
           </p>
           <div id="intro_button1">
 
@@ -254,24 +253,25 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-4 md:flex-row flex-wrap">
-            <Attend
-              icon={<FaFireAlt className="text-white text-4xl"/>}
-              heading="Reignite Your Inner Drive"
-              content="If you feel disconnected from your sense of achievement or are struggling with setbacks, Magdalena will help you reignite your passion and confidence."
-              index={0}
-            />
-            <Attend
-              icon={<FaLeaf className="text-white text-4xl"/>}
-              heading="Cultivate Resilience with Mindfulness"
-              content="Oceana’s mindfulness techniques will help you cultivate resilience, focus, and perseverance."
-              index={1}
-            />
-            <Attend
+          <Attend
               icon={<FaBuilding className="text-white text-4xl"/>}
               heading="Boost Your Real Estate Success"
               content="Perfect for real estate professionals looking to improve lead generation and deal-closing techniques."
               index={2}
             />
+           <Attend
+              icon={<FaStar className="text-white text-4xl"/>}
+              heading="Building Wealth Through Real Estate"
+              content="Gain guidance to find prime properties, secure financing, and manage tenants, ensuring steady cash flow while increasing your asset value."
+              index={0}
+            />
+            <Attend
+              icon={<FaLeaf className="text-white text-4xl"/>}
+              heading="Cultivate Resilience with Mindfulness"
+              content="Our speaker's mindfulness techniques will help you cultivate resilience, focus, and perseverance."
+              index={1}
+            />
+
           </div>
         </div>
       </section>
@@ -290,22 +290,23 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-8 md:flex-row flex-wrap">
+
             <Learn
-            icon={<FaBrain className="text-[#449E10] text-4xl"/>}
-              heading="Reclaiming Success through Mindfulness"
-              content="Discover how to realign your mindset with your goals, empowering yourself to achieve success and overcome obstacles in both personal and professional life."
+            icon={<FaDollarSign className="text-[#449E10] text-4xl"/>}
+              heading="Real Estate Investment Success"
+              content="Identify high-potential properties, secure financing, and manage tenants to create steady cash flow and grow your assets, expertly guided."
               index={0}
             />
             <Learn
-            icon={<FaSeedling className="text-[#449E10] text-4xl"/>}
-              heading="Mindfulness for Personal Transformation"
-              content="Master practical mindfulness techniques to boost focus, enhance clarity, and stay present, helping you achieve greater productivity and mental well-being in everyday life."
+            icon={<FaHouseDamage className="text-[#449E10] text-4xl"/>}
+              heading="Mastering Pre-Foreclosure Strategies"
+              content="Learn to identify and target multiple pain points , leads, equipping yourself with strategies to find opportunities and connect with homeowners before foreclosure occurs."
               index={1}
             />
-            <Learn
-            icon={<FaHouseDamage className="text-[#449E10] text-4xl"/>}
-              heading="Pre-Foreclosure and it's Mastery"
-              content="Learn to identify and target pre-foreclosure leads, equipping yourself with strategies to find opportunities and connect with homeowners before foreclosure occurs."
+                        <Learn
+            icon={<FaBrain className="text-[#449E10] text-4xl"/>}
+              heading="Mindful Focus and Strategic Opportunities"
+              content="Boost focus and clarity with mindfulness techniques while learning to identify and connect with pre-foreclosure leads effectively."
               index={2}
             />
           </div>
