@@ -257,19 +257,19 @@ export default function Home() {
               icon={<FaBuilding className="text-white text-4xl"/>}
               heading="Boost Your Real Estate Success"
               content="Perfect for real estate professionals looking to improve lead generation and deal-closing techniques."
-              index={2}
+              index={0}
             />
            <Attend
               icon={<FaStar className="text-white text-4xl"/>}
               heading="Building Wealth Through Real Estate"
               content="Gain guidance to find prime properties, secure financing, and manage tenants, ensuring steady cash flow while increasing your asset value."
-              index={0}
+              index={1}
             />
             <Attend
               icon={<FaLeaf className="text-white text-4xl"/>}
               heading="Cultivate Resilience with Mindfulness"
               content="Our speaker's mindfulness techniques will help you cultivate resilience, focus, and perseverance."
-              index={1}
+              index={2}
             />
 
           </div>
