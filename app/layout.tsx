@@ -16,21 +16,21 @@ export const metadata: Metadata = {
       "A Workshop By Nita Patel",
     images: [
       {
-        url: "/logo.png",
+        url: "/logof.png",
         width: 1200,
         height: 630,
         alt: "A Workshop By Nita Patel",
       },
     ],
     type: "website",
-    url: "/logo.png",
+    url: "/logof.png",
   },
   twitter: {
     card: "summary_large_image",
     title: "Preforeclosure Workshop",
     description:
       "A Workshop By Nita Patel",
-    images: ["/logo.png"],
+    images: ["/logof.png"],
   },
 };
 export default function RootLayout({
