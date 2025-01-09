@@ -184,7 +184,7 @@ export default function Home() {
             <button className="text-white hover:bg-[#63AB38] hover:text-black focus:ring-4 focus:outline-none focus:ring-green-300 outline outline-white font-medium rounded-3xl text-md md:text-xl md:px-8 px-6 py-4 text-center flex items-center md:gap-4 gap-3 group duration-300" >
              
                 <div className="flex items-center gap-3 md:gap-4">
-                  February 16 and 17
+                  February 15 and 16
                   
                 </div>
               
