@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import NavbarWrapper from "@/components/NavbarWrapper";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://creative-funding.vercel.app"),
+  metadataBase: new URL("https://workshop-eight-opal.vercel.app/"),
   title: "PREFORECLOSURE WORKSHOP ",
   description: "A workshop  by Nita Patel",
   openGraph: {
