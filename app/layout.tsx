@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/logo_black_background.png",
-        width: 1200,
-        height: 630,
+        width: 800,
+        height: 430,
         alt: "Creative Funding Logo",
       },
     ],
