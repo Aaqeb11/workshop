@@ -6,13 +6,13 @@ import { Footer } from "@/components/Footer";
 import NavbarWrapper from "@/components/NavbarWrapper";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://workshop-eight-opal.vercel.app/"),
+  metadataBase: new URL("http://goldminingforpreforeclosures.com/"),
   title: "PREFORECLOSURE WORKSHOP ",
   description: "A workshop  by Nita Patel",
   openGraph: {
-    title: "Creative Funding | Flexible & Reliable Loan Solutions",
+    title: "PREFORECLOSURE WORKSHOP",
     description:
-      "Experience hassle-free lending with Creative Funding. We offer various types of loans with an easy process, trustworthy service, and round-the-clock availability. Your reliable partner in financial solutions.",
+      "A workshop  by Nita Patel",
     images: [
       {
         url: "/logof-removebg-preview.png",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Creative Funding | Simple & Trusted Loan Solutions",
+    title: "PREFORECLOSURE WORKSHOP",
     description:
-      "Looking for flexible loan options? Creative Funding offers various types of loans with an easy process, trustworthy service, and 24/7 support. Your path to reliable financial solutions starts here.",
+      "Workshop By Nita Patel",
     images: ["/logof-removebg-preview.png"],
   },
 };
