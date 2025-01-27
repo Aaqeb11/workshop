@@ -27,6 +27,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/all";
+import Reviews from "@/components/Reviews";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -227,21 +229,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Speakers Section */}
-      <section className="relative z-20 bg-black min-h-screen p-2 md:p-8"
-      id="speakers">
-        <div className="flex flex-col justify-center gap-4 px-4 mt-10 bg-black">
-          <p className="text-white text-center text-4xl md:text-left lg:text-8xl md:text-6xl p-6" id="speakers_title">
-            OUR <span className="text-[#63AB38]">SPEAKERS</span>
-          </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 my-10 flex-wrap">
-            <Speakers image={speaker3} name=" Nita Patel" />
-            <Speakers image={speaker2} name="Oceana Hong" />
-            <Speakers image={speaker1} name="Magdalena Szara" />
-            <Speakers image={speaker4} name="Gabriela Decu" />
-          </div>
-        </div>
-      </section>
+      
 
       <section className="relative z-20 bg-white min-h-screen md:p-8 p-2 pb-12" 
       id="attend">
@@ -315,6 +303,36 @@ export default function Home() {
         </div>
       </section>
 
+
+      <section className="relative z-30 bg-white min-h-screen p-2 md:p-8" id="testimonials">
+        <div className="flex flex-col items-center justify-center gap-12 mt-10 md:gap-[10vh]">
+          <div className="flex flex-col items-center gap-6" id="reviews_title">
+            <p className="text-center text-4xl font-medium p-6 md:text-6xl lg:text-8xl">
+              <span className="text-[#63AB38]">STORIES</span> IN ACTION
+            </p>
+            <p className="text-md font-medium text-center text-[#999999] md:max-w-[70vw]">
+            Captivating testimonials showcasing authentic experiences
+            </p>
+          </div>
+        </div>
+        <Reviews />
+      </section>
+
+      <section className="relative z-30 bg-white min-h-screen p-2 md:p-8" id="reviews">
+        <div className="flex flex-col items-center justify-center gap-12 mt-10 md:gap-[10vh]">
+          <div className="flex flex-col items-center gap-6" id="reviews_title">
+            <p className="text-center text-4xl font-medium p-6 md:text-6xl lg:text-8xl">
+              <span className="text-[#63AB38]">WORDS</span> OF GRATITUDE
+            </p>
+            <p className="text-md font-medium text-center text-[#999999] md:max-w-[70vw]">
+            Heartfelt reflections from those we've impacted
+            </p>
+          </div>
+        </div>
+        <TestimonialCarousel />
+      </section>
+
+
       {/* Events Section */}
       <section className="relative z-30 bg-white min-h-screen p-2 md:p-8" id="events">
         <div className="flex flex-col items-center justify-center gap-12 mt-10 md:gap-[10vh]">
@@ -330,6 +348,7 @@ export default function Home() {
         </div>
         <Events />
       </section>
+
 
       {/* Contact Us Section */}
       <section className="relative z-20 bg-black h-auto p-10"

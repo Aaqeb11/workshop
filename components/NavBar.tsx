@@ -114,10 +114,10 @@ export default function Navbar({ isTicketPage }: NavbarProps) {
             </li>
             <li>
               <a
-                href="#speakers"
+                href="#testimonials"
                 className="block py-2 px-3 text-white rounded hover:bg-[#63AB38] md:hover:bg-transparent md:hover:text-[#63AB38] md:p-0"
               >
-                Speakers
+                Testimonials
               </a>
             </li>
             <li>
